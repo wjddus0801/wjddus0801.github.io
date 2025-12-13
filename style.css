@@ -84,6 +84,7 @@ footer {
   backdrop-filter: blur(0.3px); 
   border-radius: 24px; 
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
 }
 
 /* ================= home ================= */
@@ -384,4 +385,44 @@ footer {
   border: 1px solid #CCCCCC;
   border-radius: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 80px 60px;
+  }
+
+  .about-content {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-section {
+    padding: 180px 20px 100px;
+  }
+
+  .container {
+    padding: 60px 30px;
+  }
+
+  .about-content {
+    flex-direction: column;   /* ← 가로 → 세로 */
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .about-image {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .about-image {
+    width: 180px;
+  }
 }
