@@ -7,26 +7,28 @@
 </head>
 
 <body>
-
-<!-- 고정 네비게이션 -->
-<nav class="nav-menu fixed-nav">
-  <ul>
-    <li><a href="#home"><span>Home</span></a></li>
-    <li><a href="#about"><span>About</span></a></li>
-    <li><a href="#projects"><span>Projects</span></a></li>
-    <li><a href="#contacts"><span>Contact</span></a></li>
-  </ul>
-</nav>
+  <div class="blur-overlay"></div>
+  
+  <!-- 고정 네비게이션 -->
+  <nav class="nav-menu fixed-nav">
+    <ul>
+      <li><a href="#home"><span>Home</span></a></li>
+      <li><a href="#about"><span>About</span></a></li>
+      <li><a href="#projects"><span>Projects</span></a></li>
+      <li><a href="#contacts"><span>Contact</span></a></li>
+    </ul>
+  </nav>
 
 <!-- Home -->
-<section id="home" class="home-section">
-  <div class="home-glass">
+  <section id="home" class="home-section">
     <div class="home-inner">
       <h1 class="home-name">Jeongyeon Han</h1>
-      <p class="home-role">I'm Developer.</p>
+      <p class="home-tag">A student developer on a learning journey.</p>
+      <a href="https://github.com/wjddus0801" class="github-icon-btn" target="_blank">
+        <img src="github.svg" alt="GitHub">      
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- About -->
 <section id="about" class="page-section">
@@ -35,7 +37,7 @@
     <div class="about-content">
       <!-- 프로필 사진 -->
       <div class="about-image">
-        <img src="profile.jpg" alt="Profile Image">
+        <img src="me.png" alt="Profile Image">
       </div>
       <!-- 소개 글 -->
       <div class="about-text">
@@ -44,23 +46,29 @@
           I am interested in web development and enjoy making simple projects.
         </p>
         <ul class="about-info">
-          <li><strong>Birthday:</strong> 1 August</li>
-          <li><strong>School:</strong> Kunsan National University</li>
           <li><strong>Phone:</strong> +82 010-6634-5997</li>
           <li><strong>Email:</strong> hanjy8320@gmail.com</li>
         </ul>
       </div>
     </div>
-    <h3>Currently Learning Skills</h3>
+    <h3>Stack skills</h3>
     <ul class="about-skills">
-      <li>C</li>
-      <li>Python</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
+        <li><img src="c.svg" alt="C"><span>C</span></li>
+        <li><img src="python-icon.svg" alt="Python"><span>Python</span></li>
+        <li><img src="w3_html5-icon.svg" alt="HTML"><span>HTML</span></li>
+        <li><img src="w3_css-official.svg" alt="CSS"><span>CSS</span></li>
+        <li><img src="javascript-icon.svg" alt="JavaScript"><span>JavaScript</span></li>
     </ul>
-  </div>
-</section>
+    <h3>Education</h3>
+    <ul class="about-education">
+      <li>
+        <a href="https://www.kunsan.ac.kr/index.kunsan?contentsSid=4714&sso=ok" target="_blank" class="edu-link">
+          <img src="KNU.jpg" alt="Kunsan National University"><span>Kunsan National University</span></a>
+        </li>
+        <p class="edu-period">2025 ~</p>
+      </ul>
+    </div>
+  </section>
 
 <section id="projects" class="page-section">
   <div class="container">
@@ -68,12 +76,14 @@
     <div class="project-list">
       <div class="project-card">
         <div class="project-image">
-          <img id="zoomImage" src="web_project.png" alt="Project Image">
+          <img id="zoomImage" src="web_projects.png" alt="Project Image">
         </div>
         <div class="project-content">
-          <h3>Personal Portfolio</h3>
+          <h5>Personal Portfolio</h5>
+          <p>A personal portfolio website created to practice HTML, CSS, and JavaScript learned in class.</p>
           <div class="project-links">
-            <a href="https://github.com/wjddus0801/wjddus0801.github.io" target="_blank" class="project-btn">GitHub</a>
+            <a href="https://github.com/wjddus0801"class="github-btn"target="_blank"><img src="github.svg" alt="GitHub"></a>
+
           </div>
         </div>
       </div>
@@ -83,26 +93,7 @@
 
 <section id="contacts" class="page-section">
   <div class="container">
-  <h2>Contacts</h2>
-    <div class="contact-info">
-      <div class="info-box">
-        <h3>Address</h3>
-        <p>Kunsan National University</p>
-      </div>
-      <div class="info-box">
-        <h3>Email</h3>
-        <p>hanjy8320@gmail.com</p>
-      </div>
-      <div class="info-box">
-        <h3>Social</h3>
-        <p><a href="https://github.com/wjddus0801" target="_blank">GitHub</a></p>
-      </div>
-      <div class="info-box">
-        <h3>Contact</h3>
-        <p>+82 010-6634-5997</p>
-      </div>
-    </div>
-
+  <p>Feel free to send me a message anytime.</p>
     <div class="contact-form">
       <h2>Contact Me</h2>
       <form>
