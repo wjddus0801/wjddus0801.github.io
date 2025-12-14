@@ -7,6 +7,7 @@
 </head>
 
 <body>
+  <!-- 배경 블러 -->
   <div class="blur-overlay"></div>
   
   <!-- 고정 네비게이션 -->
@@ -19,7 +20,7 @@
     </ul>
   </nav>
 
-<!-- Home -->
+<!-- home -->
   <section id="home" class="home-section">
     <div class="home-inner">
       <h1 class="home-name">Jeongyeon Han</h1>
@@ -30,16 +31,14 @@
     </div>
   </section>
 
-<!-- About -->
+<!-- about -->
 <section id="about" class="page-section">
   <div class="container">
     <h2>About</h2>
     <div class="about-content">
-      <!-- 프로필 사진 -->
       <div class="about-image">
-        <img src="me.png" alt="Profile Image">
+        <img src="me.png" alt="me">
       </div>
-      <!-- 소개 글 -->
       <div class="about-text">
         <p>
           I am a Computer Science student.<br>
@@ -64,12 +63,13 @@
       <li>
         <a href="https://www.kunsan.ac.kr/index.kunsan?contentsSid=4714&sso=ok" target="_blank" class="edu-link">
           <img src="KNU.jpg" alt="Kunsan National University"><span>Kunsan National University</span></a>
+          <p class="edu-period">2025 ~</p>
         </li>
-        <p class="edu-period">2025 ~</p>
       </ul>
     </div>
   </section>
 
+<!-- projexts -->
 <section id="projects" class="page-section">
   <div class="container">
     <h2>Projects</h2>
@@ -82,8 +82,7 @@
           <h5>Personal Portfolio</h5>
           <p>A personal portfolio website created to practice HTML, CSS, and JavaScript learned in class.</p>
           <div class="project-links">
-            <a href="https://github.com/wjddus0801"class="github-btn"target="_blank"><img src="github.svg" alt="GitHub"></a>
-
+            <a href="https://github.com/wjddus0801/wjddus0801.github.io"class="github-btn"target="_blank"><img src="github.svg" alt="GitHub"></a>
           </div>
         </div>
       </div>
@@ -91,24 +90,30 @@
   </div>
 </section>
 
-<section id="contacts" class="page-section">
-  <div class="container">
-  <p>Feel free to send me a message anytime.</p>
-    <div class="contact-form">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" id="nameInput" placeholder="Your Name">
-        <input type="email" id="emailInput" placeholder="Your Email">
-        <textarea id="messageInput" placeholder="Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+  <!-- contacts -->
+  <section id="contacts" class="page-section">
+    <div class="container">
+      <p>Feel free to send me a message anytime.</p>
+      <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <label for="nameInput">Name</label>
+          <input type="text" id="nameInput" placeholder="Your Name">
+          <label for="emailInput">Email</label>
+          <input type="email" id="emailInput" placeholder="Your Email">
+          <label for="messageInput">Message</label>
+          <textarea id="messageInput" placeholder="Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <p>© 2025 wjddus</p>
-</footer>
-<script src="main.js"></script>
+  <!-- 하단 고정 footer -->
+  <footer>
+    <p>© 2025 wjddus</p>
+  </footer>
+  
+  <script src="main.js"></script>
 </body>
 </html>

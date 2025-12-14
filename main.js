@@ -25,9 +25,10 @@ messageInput.addEventListener("blur", function () {
 
 
 let image = document.getElementById("zoomImage");
-
-image.onmouseover = zoomIn;
-image.onmouseout = zoomOut;
+if (image) {
+  image.onmouseover = zoomIn;
+  image.onmouseout = zoomOut;
+}
 
 function zoomIn() {
   image.style.transform = "scale(1.1)";
